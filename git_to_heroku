@@ -1,0 +1,5 @@
+post github to heroku
+
+composer.json disi -> {}
+
+Procfile di isi -> web: vendor/bin/heroku-php-apache2 /
