@@ -30,8 +30,8 @@ li{
     background-color: #eaeaea;
     background-size: cover;
     border-radius: 200px;
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     margin: 0 auto;
     border: 1px solid #eaeaea;
 }
@@ -87,7 +87,7 @@ p {
   }
   
   .flip-card-front {
-    background-color: #ffe3ed;
+    background-color: #beebe9;
     color: black;
   }
   
