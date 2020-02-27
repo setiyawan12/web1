@@ -2,18 +2,19 @@
 body{
     padding: 80px;
     background-image: url(../img/bg.jpg);
-    text-align: center;
-    position: cover;
+    text-align: justify;
+    background-size: cover;
     font-family: 'Quicksand', sans-serif;
 }
 
 ul{
-    margin-left: -45px;
+  position: absolute;
 }
 
 li{
     list-style: none;
     display: inline-block;
+  
 }
 
 .main{
