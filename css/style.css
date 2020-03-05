@@ -200,7 +200,7 @@ p {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 6em;
   align-items: center;
   height: 40vh;
 }
@@ -208,7 +208,7 @@ h1 {
 h1 span {
   text-align: center;
   font-family: fantasy;
-  display: table-cell;
+  display: table-caption;
   animation: animate 2s linear infinite;
 }
 h1 span:nth-child(1) {
@@ -242,15 +242,15 @@ h1 span:nth-child(9) {
 @keyframes animate {
   0%,
   100% {
-    color: rgb(110, 85, 255);
-    filter: blur(0px);
-    box-shadow: 0 0 10px #ff78f8, 0 0 20px #ff78f8, 0 0 40px #ff78f8,
-      0 0 80px #ff78f8, 0 0 120px #ff78f8, 0 0 200px #ff78f8, 0 0 300px #ff78f8;
+    color: rgb(118, 94, 255);
+    filter: blur(2px);
+    box-shadow: 0 0 0px #ff78f8, 0 0 0px #ff78f8, 0 0 0px #ff78f8,
+      0 0 0px #ff78f8, 0 0 0px #ff78f8, 0 0 200px #ff78f8, 0 0 300px #ff78f8;
   }
-  5%,
+  15%,
   85% {
-    color: rgb(144, 250, 253);
+    color: rgb(144, 249, 253);
     filter: blur(0px);
-    text-shadow: 0 0 10px none;
+    text-shadow: 0 0 30px none;
   }
 }
