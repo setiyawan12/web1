@@ -1,182 +1,198 @@
-@import url('http://fonts.googleapis.com/css/family=Quicksand:400,500&subset=latin-ext');
-body{
-    padding: 80px;
-    background-image: url(../img/bg.jpg);
-    text-align: justify;
-    background-size: cover;
-    font-family: 'Quicksand', sans-serif;
+@import url("http://fonts.googleapis.com/css/family=Quicksand:400,500&subset=latin-ext");
+body {
+  padding: 80px;
+  background-image: url(../img/bg.jpg);
+  text-align: justify;
+  background-size: cover;
+  font-family: "Quicksand", sans-serif;
 }
 
-ul{
-  position: absolute;
+ul {
+  position: fixed;
+  transform: translate(-10%, -50%);
+  display: flex;
+  padding-top: 3%;
 }
 
-li{
-    list-style: none;
-    display: inline-block;
-  
+li {
+  list-style: none;
+  display: inline-block;
 }
 
-.main{
-    width: 1200px;
-    height: 790px;
-    background-color: #ace3ec;
-    margin: 0 auto;
-    padding-top: 10px;
-    border-radius: 10px;
-    border: 1px solid #eeeeee}
-
-.img{
-    background-image: url(../img/profile.JPG);
-    background-color: #eaeaea;
-    background-size: cover;
-    border-radius: 200px;
-    width: 230px;
-    height: 230px;
-    margin: 0 auto;
-    border: 1px solid #eaeaea;
+ul li {
+  list-style: none;
+  widows: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 0 5p0x;
+  margin: 0 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 130px;
+  color: #000635;
+  transition: 0.15%;
 }
-h1{
-    text-align: center;
-    font-size: 30px;
-    margin: 0;
-    font-weight: bold;
-    color: #6944ff;
+
+ul li:hover {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(2, 2, 2), 0 0 20px rgb(17, 16, 16),
+    0 0 30px rgb(0, 0, 0), 0 0 75px rgba(0, 0, 0, 0.05),
+    0 0 60px rgba(0, 0, 0, 0.05), 0 0 45px rgba(0, 0, 0, 0.05),
+    0 0 30px rgba(14, 13, 13, 0.05), 0 0 15px rgba(17, 16, 16, 0.05);
+}
+
+.main {
+  width: 1200px;
+  height: 790px;
+  background-color: #ace3ec;
+  margin: 0 auto;
+  padding-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #eeeeee;
+}
+
+.img {
+  background-image: url(../img/profile.JPG);
+  background-color: #eaeaea;
+  background-size: cover;
+  border-radius: 200px;
+  width: 230px;
+  height: 230px;
+  margin: 0 auto;
+  border: 1px solid #eaeaea;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  font-weight: bold;
+  color: #6944ff;
 }
 
 .text {
-    text-align: center;
-    font-size: 15px;
-    margin: 0;
-    color: #324e63;
-    padding-bottom: 10px;
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+  color: #324e63;
+  padding-bottom: 10px;
 }
 p {
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 450px;
-    height: auto;
-    color: #324e63;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 450px;
+  height: auto;
+  color: #324e63;
 }
 .flip-card {
-    background-color: transparent;
-    width: 1200px;
-    height: 400px;
-    border: 1px solid #ace3ec;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: left;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: #beebe9;
-    color: black;
-  }
-  
-  .flip-card-back {
-    background-color: #ace3ec;
-    color: #ace3ec;
-    transform: rotateY(180deg);
-  }
-  .label {
-    color: blue;
-    padding: 25px;
-    margin-right: 1200px;
-  }
-  .card{
-    background-color: blue;
-  }
-
-  #sha_temp_meta
-{
-    margin-top: 10px;
+  background-color: transparent;
+  width: 1200px;
+  height: 400px;
+  border: 1px solid #ace3ec;
+  perspective: 1000px;
 }
 
- .sha_tile > div
-{
-    position: relative;
-    border: 1px solid rgba(255,255,255,0.7);
-    background-color: rgba(0,0,0,0.01);
-    border-radius: 15px;  
-    padding: 15px;
-    box-shadow: 15px 5px 20px -10px rgba(0,0,0,0.15),
-                -15px -5px 20px -10px rgba(255,255,255,0.8);
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.sha_tile > div span.tile_icon
-{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 15px;
-    border-radius: 15px;
-    border: 1px solid rgba(0,0,0,0.02);
-    background-color: rgba(0,0,0,0.01);
-    color: rgba(49,69,106,0.6);
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                -6px -6px 10px -1px rgba(255,255,255,0.7);
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-.sha_tile > div span.tile_info
-{
-    position: absolute;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(49,69,106,0.8);
-    padding-left: 14px;
-    margin-top: 5px;
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.sha_tile > div span.tile_info span
-{
-    display: block;
-    font-weight: 400;
-    color: rgba(49,69,106,0.5);
-}
-.sha_tile:not(last-child)
-{
-    margin-bottom: 10px;
-}
-.sha_tile > div span.tile_info
-{
-    position: absolute;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-    color: rgba(49,69,106,0.8);
-    padding-left: 14px;
-    margin-top: 5px;
+.flip-card-front {
+  background-color: #beebe9;
+  color: black;
 }
 
-.sha_tile > div span.tile_info span
-{
-    display: block;
-    font-weight: 400;
-    color: rgba(49,69,106,0.5);
+.flip-card-back {
+  background-color: #ace3ec;
+  color: #ace3ec;
+  transform: rotateY(180deg);
 }
-.sha_tile:not(last-child)
-{
-    margin-bottom: 12px;
+.label {
+  color: blue;
+  padding: 25px;
+  margin-right: 1200px;
+}
+.card {
+  background-color: blue;
+}
+
+#sha_temp_meta {
+  margin-top: 10px;
+}
+
+.sha_tile > div {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.01);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 15px 5px 20px -10px rgba(0, 0, 0, 0.15),
+    -15px -5px 20px -10px rgba(255, 255, 255, 0.8);
+}
+
+.sha_tile > div span.tile_icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.01);
+  color: rgba(49, 69, 106, 0.6);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.sha_tile > div span.tile_info {
+  position: absolute;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(49, 69, 106, 0.8);
+  padding-left: 14px;
+  margin-top: 5px;
+}
+
+.sha_tile > div span.tile_info span {
+  display: block;
+  font-weight: 400;
+  color: rgba(49, 69, 106, 0.5);
+}
+.sha_tile:not(last-child) {
+  margin-bottom: 10px;
+}
+.sha_tile > div span.tile_info {
+  position: absolute;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(49, 69, 106, 0.8);
+  padding-left: 14px;
+  margin-top: 5px;
+}
+
+.sha_tile > div span.tile_info span {
+  display: block;
+  font-weight: 400;
+  color: rgba(49, 69, 106, 0.5);
+}
+.sha_tile:not(last-child) {
+  margin-bottom: 12px;
 }
